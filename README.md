@@ -1,6 +1,6 @@
 ## <a target="_blank" href="https://www.codewars.com/users/Samson%20Vansouang" >CodeWars Profile</a> 
 
-![alt tag](https://github.com/vansouang/CodeWars/blob/master/codeWarsProfile.png)
+![alt tag](https://github.com/vansouang/code-wars/blob/master/codeWarsProfile.png)
 
 Repository for my solutions to codewars challenges. Current goal is the make rank on the #100Devs clan as a fun way to learn everyday. 
 
