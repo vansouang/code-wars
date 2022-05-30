@@ -10,12 +10,18 @@
 //put each word into a separate element
 //split() takes a delimiter and puts each word into its own element
 
-function stringToArray(string){
+// function stringToArray(string){
 
-    newArray = string.split(" ")
+//     newArray = string.split(" ")
   
-    return newArray 
+//     return newArray 
   
-  }
+//   }
 
   //I think return string.split(" ") would work without using newArray variable
+
+  function stringToArray(string){
+
+    return string.split(" ")
+  
+  }
