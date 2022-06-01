@@ -38,3 +38,37 @@ function howManydays(month){
 }
 
 //probably a way to consolidate cases that return the same value
+
+
+// 'best practice' solution on codewars -- but what if the value passed in was outside the rane of 1 through 12
+
+// function howManydays(month){
+//     switch (month){
+//        case 2: return 28
+//        case 4:
+//        case 6:
+//        case 9:
+//        case 11: return 30
+//     }
+//     return 31
+//   }
+
+//My second attempt:
+
+function howManydays(month){
+    switch (month){
+       case 2: return 28
+       case 4:
+       case 6:
+       case 9:
+       case 11: return 30
+       case 1: 
+       case 3:
+       case 5:
+       case 7:
+       case 8:
+       case 10:
+       case 12: return 31
+    }
+    return 'The value passed in is not in the range 1 through 12'
+}
