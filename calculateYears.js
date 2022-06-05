@@ -29,18 +29,38 @@
 // Assumption: Assume that Desired Principal 'D' is always greater than the initial principal. 
 // However it is best to take into consideration that if Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.
 
+// function calculateYears(principal, interest, tax, desired) {
+//     //figure out the formula for annual return
+//   //loop until the annual return is greater than desired return
+  
+//   // principal * (interest * (1 - tax)) + principal
+  
+//ORIGINAL SOLUTION WITH A FOR LOOP  
+
+//  for (let year = 0; ; year++){
+//    if (principal >= desired) return year
+//    else principal = principal * (interest * (1-tax)) + principal
+//  }
+         
+         
+//   //return years
+// }
+
+//REFACTORED WITH A WHILE LOOP
 function calculateYears(principal, interest, tax, desired) {
-    //figure out the formula for annual return
-  //loop until the annual return is greater than desired return
-  
-  // principal * (interest * (1 - tax)) + principal
-  
-  
- for (let year = 0; ; year++){
-   if (principal >= desired) return year
-   else principal = principal * (interest * (1-tax)) + principal
- }
-         
-         
-  //return years
+
+    let years = 0;
+    while (principal <  desired){
+        principal += principal * interest * (1 - tax)
+        years++; 
+    }
+    return years
+      
+    
+    //  for (let year = 0; ; year++){
+    //    if (principal >= desired) return year
+    //    else principal = principal * (interest * (1-tax)) + principal
+    //  }
+             
 }
+    
